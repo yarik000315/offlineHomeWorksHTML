@@ -1,0 +1,110 @@
+.features {
+  & .conteiner {
+    @include for-size(tablet-portrait) {
+      padding-bottom: 60px;
+    }
+
+    @include for-size(tablet-landscape) {
+      width: 768px;
+    }
+
+    @include for-size(desktop) {
+      padding-bottom: 94px;
+    }
+  }
+  &-title {
+    color: $title-text-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    @include for-size(tablet-portrait) {
+      text-align: center;
+    }
+
+    @include for-size(tablet-landscape) {
+      text-align: start;
+    }
+  }
+  &-text {
+    color: $main-text-color;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+  }
+
+  &-list {
+    @include for-size(tablet-landscape) {
+      width: calc((100% - 2 * 15px) / 2);
+      margin-right: 30px;
+
+      &:nth-child(2n) {
+        margin-right: 0px;
+      }
+    }
+
+    @include for-size(desktop) {
+      width: calc((100% - 2 * 15px) / 2);
+      margin-right: 30px;
+    }
+
+    &:not(:last-child) {
+      @include for-size(tablet-portrait) {
+        margin-bottom: 30px;
+      }
+
+      @include for-size(desktop) {
+        margin-right: 30px;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      height: 120px;
+      background-color: $team-color;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.features ul {
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.technology {
+  margin-bottom: 0;
+}
+
+.icon {
+  &-antenna::before {
+    background-image: url(../images/antenna_1.svg);
+  }
+
+  &-clock::before {
+    background-image: url(../images/clock_1.svg);
+  }
+
+  &-diagram::before {
+    background-image: url(../images/diagram_1.svg);
+  }
+
+  &-astronaut::before {
+    background-image: url(../images/astronaut_1.svg);
+  }
+}

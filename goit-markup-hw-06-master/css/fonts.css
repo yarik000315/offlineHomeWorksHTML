@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../Fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../Fonts/Raleway/Raleway-VariableFont_wght.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../Fonts/Roboto/Roboto-Black.ttf") format("woff2"),
+    url("../Fonts/Roboto/Roboto-BlackItalic.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../Fonts/Roboto/Roboto-Bold.ttf") format("woff2"),
+    url("../Fonts/Roboto/Roboto-BoldItalic.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../Fonts/Roboto/Roboto-Italic.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../Fonts/Roboto/Roboto-Light.ttf") format("woff2"),
+    url("../Fonts/Roboto/Roboto-LightItalic.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../Fonts/Roboto/Roboto-Medium.ttf") format("woff2"),
+    url("../Fonts/Roboto/Roboto-MediumItalic.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../Fonts/Roboto/Roboto-Regular.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../Fonts/Roboto/Roboto-Thin.ttf") format("woff2"),
+    url("../Fonts/Roboto/Roboto-ThinItalic.ttf") format("woff");
+}

@@ -1,0 +1,138 @@
+.team {
+  background-color: $team-color;
+  background-position: center;
+  margin-right: auto;
+  margin-left: auto;
+
+  &-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  &-list p {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  &-box:not(:last-child) {
+    @include for-size(tablet-portrait) {
+      margin-bottom: 30px;
+    }
+
+    @include for-size(tablet-landscape) {
+      margin-right: 30px;
+    }
+  }
+
+  &-box {
+    @include for-size(tablet-landscape) {
+      width: calc((100% - 2 * 15px) / 2);
+      margin-right: 30px;
+
+      & {
+        margin-bottom: 30px;
+      }
+    }
+    &:nth-child(2n) {
+      margin-right: 0px;
+
+      @include for-size(desktop) {
+        & {
+          margin-bottom: 30px;
+        }
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    }
+
+    background-color: $title-text-white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  & ul {
+    @include for-size(tablet-landscape) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @include for-size(desktop) {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.our-team-title {
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+  font-weight: bold;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @include for-size(phone-only) {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  @include for-size(tablet-portrait) {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  @include for-size(desktop) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+.social-icons {
+  &-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-items {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &-items:not(:last-child) {
+    margin-right: 10px;
+    margin-bottom: 16px;
+  }
+
+  &-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    @include animation(background-color);
+
+    &:hover {
+      background-color: $logo-first-color;
+    }
+  }
+}
+
+.social-icon {
+  fill: $logo-icon-color;
+
+  @include animation(fill);
+
+  .social-icons-link:hover & {
+    fill: $title-text-white-color;
+  }
+}

@@ -1,0 +1,45 @@
+.top-client {
+  padding-bottom: 94px;
+}
+
+.customers {
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.element-list {
+  justify-content: space-between;
+}
+.company-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 90px;
+  width: 170px;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  @include animation(border);
+
+  &:hover {
+    border: 1px solid $logo-first-color;
+  }
+}
+
+.logo-icon {
+  fill: $logo-icon-color;
+
+  @include animation(fill);
+
+  .company-box:hover & {
+    fill: $logo-first-color;
+  }
+}

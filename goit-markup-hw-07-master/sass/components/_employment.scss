@@ -1,0 +1,41 @@
+.employment {
+  &-title {
+    margin-bottom: 50px;
+
+    color: $title-text-color;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  &-card {
+    position: relative;
+    height: 294px;
+  }
+
+  &-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+
+    color: $title-text-white-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  &-list:not(:last-child) {
+    margin-right: 30px;
+  }
+}

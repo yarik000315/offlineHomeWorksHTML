@@ -1,0 +1,215 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+
+  @include animation(opacity);
+  z-index: 998;
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.form {
+  &-contacts {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 999;
+    @include for-size(tablet-portrait) {
+      width: 450px;
+      height: 609px;
+    }
+    @include for-size(tablet-landscape) {
+      width: 528px;
+      height: 581px;
+    }
+
+    background: $title-text-white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  &-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+
+    padding-top: 37px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    margin-left: 40px;
+
+    font-size: 20px;
+    line-height: 1.15;
+
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+  }
+
+  &-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 36px;
+    margin-right: 44px;
+  }
+
+  &-label {
+    margin-bottom: 4px;
+
+    color: $main-text-color;
+  }
+}
+
+.form-box .form-field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contacts-field {
+  padding-left: 42px;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  @include animation(outline-color);
+
+  &:focus {
+    outline-color: $logo-first-color;
+  }
+}
+
+.form-icon {
+  position: absolute;
+  top: 36px;
+  left: 15px;
+
+  fill: $title-text-color;
+
+  @include animation(fill);
+
+  .contacts-field:focus + &,
+  .contacts-field:hover + & {
+    fill: $logo-first-color;
+  }
+}
+
+.comment {
+  resize: none;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  color: $main-text-color;
+
+  @include animation(outline-color);
+
+  &:focus {
+    outline-color: $logo-first-color;
+  }
+}
+
+.checkbox {
+  margin-left: 51px;
+  margin-top: 20px;
+
+  &-label {
+    position: relative;
+    display: inline-block;
+  }
+}
+
+.checkbox-icon {
+  position: absolute;
+  top: 20px;
+  left: 49px;
+  pointer-events: none;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+
+  background-color: white;
+
+  .checkbox:checked + & {
+    background-color: $logo-first-color;
+    border-color: $logo-first-color;
+    background-image: url(../images_form/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
+
+.consent {
+  margin-left: 7px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $main-text-color;
+}
+
+.form-link {
+  color: #188ce8;
+}
+
+.close-button {
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  top: 8px;
+  right: 11px;
+
+  border-radius: 50%;
+  background: $title-text-white-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close-icon {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  fill: #000000;
+
+  @include animation(fill);
+
+  .close-button:hover &,
+  .close-button:focus & {
+    fill: $logo-first-color;
+  }
+}
+
+.submit {
+  &-button {
+    width: 200px;
+    height: 50px;
+
+    color: $title-text-white-color;
+
+    background: #188ce8;
+    border: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  &_box {
+    text-align: center;
+    margin-top: 30px;
+  }
+}

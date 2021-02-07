@@ -1,0 +1,133 @@
+.top-client {
+  @include for-size(phone-only) {
+    padding-bottom: 60px;
+  }
+
+  @include for-size(tablet-portrait) {
+    padding-bottom: 60px;
+  }
+
+  @include for-size(desktop) {
+    padding-bottom: 94px;
+  }
+}
+
+.customers {
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @include for-size(phone-only) {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  @include for-size(tablet-portrait) {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  @include for-size(desktop) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+.element-list {
+  justify-content: space-between;
+
+  @include for-size(phone-only) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include for-size(tablet-portrait) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include for-size(desktop) {
+    flex-wrap: nowrap;
+  }
+
+  & li {
+    @include for-size(phone-only) {
+      width: calc((100% - 2 * 15px) / 2);
+      &:nth-child(3),
+      &:nth-child(1) {
+        margin-bottom: 30px;
+      }
+      &:nth-child(2n + 1) {
+        margin-right: 30px;
+      }
+    }
+
+    @include for-size(tablet-portrait) {
+      width: calc((100% - 2 * 15px) / 2);
+      &:nth-child(3),
+      &:nth-child(1) {
+        margin-bottom: 30px;
+      }
+      &:nth-child(2n + 1) {
+        margin-right: 30px;
+      }
+    }
+
+    @include for-size(tablet-landscape) {
+      width: calc((100% - 6 * 10px) / 3);
+      &:nth-child(2n) {
+        margin-right: 30px;
+      }
+      &:nth-child(3n) {
+        margin-right: 0px;
+      }
+    }
+
+    @include for-size(desktop) {
+      &:nth-child(3),
+      &:nth-child(1) {
+        margin-bottom: 0px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.company-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // height: 90px;
+  // width: 170px;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  // &:nth-child(2n) {
+  //   margin-right: 0px;
+
+  //
+  // }
+
+  @include animation(border);
+
+  &:hover {
+    border: 1px solid $logo-first-color;
+  }
+}
+
+.logo-icon {
+  fill: $logo-icon-color;
+
+  @include animation(fill);
+
+  .company-box:hover & {
+    fill: $logo-first-color;
+  }
+}

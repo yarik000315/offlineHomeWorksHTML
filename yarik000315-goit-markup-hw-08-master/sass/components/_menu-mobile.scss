@@ -1,0 +1,32 @@
+.menu-button {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+
+  &.is-open .icon-cross {
+    outline: none;
+    display: block;
+  }
+
+  & .icon-cross {
+    display: none;
+  }
+
+  &:hover .icon-menu,
+  &:focus .icon-menu,
+  &:hover .icon-cross,
+  &:focus .icon-cross {
+    fill: $logo-first-color;
+  }
+
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+}

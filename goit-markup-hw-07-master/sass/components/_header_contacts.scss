@@ -1,0 +1,60 @@
+.contacts {
+  align-items: center;
+
+  & li:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: $main-text-color;
+  }
+}
+
+.envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: $main-text-color;
+
+  @include animation(fill);
+}
+
+.phone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill: $main-text-color;
+
+  @include animation(fill);
+
+  &-link {
+    @include animation(color);
+
+    &:hover,
+    &:focus {
+      color: $logo-first-color;
+    }
+
+    &:hover .phone,
+    &:focus .phone {
+      fill: $logo-first-color;
+    }
+  }
+}
+
+.mail-link {
+  @include animation(color);
+
+  &:hover,
+  &:focus {
+    color: $logo-first-color;
+  }
+
+  &:hover .envelope,
+  &:focus .envelope {
+    fill: $logo-first-color;
+  }
+}

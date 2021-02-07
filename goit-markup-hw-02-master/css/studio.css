@@ -1,0 +1,183 @@
+:root {
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --title-text-white-color: #ffffff;
+  --logo-first-color: #2196f3;
+  --logo-second-color: #000000;
+}
+body {
+  background-color: #b49e93;
+  font-family: Roboto, sans-serif;
+  color: var(--main-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* логотип */
+.logo-first-part,
+.logo-second-part {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo-first-part {
+  color: var(--logo-first-color);
+}
+
+.logo-second-part {
+  color: var(--logo-second-color);
+}
+
+/* навигация */
+.list-nav a {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.list-nav a:hover,
+.list-nav a:focus {
+  color: var(--logo-first-color);
+}
+
+.list-nav .current {
+  color: var(--logo-first-color);
+}
+
+/* контакты */
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--logo-first-color);
+}
+.contacts a {
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+
+/* заголовок */
+.big-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--title-text-white-color);
+}
+/* кнопка */
+.button {
+  background-color: var(--logo-first-color);
+  color: var(--title-text-white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+/* список 1 */
+.features-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-text {
+  color: var(--main-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* список 2 */
+
+.employment-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.employment-list p {
+  color: var(--title-text-white-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.our-team-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1/18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* секция 3 */
+
+.customers {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* footer */
+.footer-contacts a {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  color: var(--title-text-white-color);
+}
+
+.logo-footer-part {
+  color: var(--title-text-white-color);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.join {
+  color: var(--title-text-white-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.subscription {
+  color: var(--title-text-white-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

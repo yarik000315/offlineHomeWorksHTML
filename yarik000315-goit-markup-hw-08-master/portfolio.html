@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home_work_08_Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+  <body>
+    <header class="container page-header">
+      <div class="main-header">
+        <a href="./" class="logo">
+          <span class="main">Web</span>
+          <span class="black">Studio</span>
+        </a>
+
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="navigations"
+          aria-label="Мобильное меню"
+          data-menu-button
+        >
+          <svg width="40px" height="40px">
+            <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+            <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+          </svg>
+        </button>
+
+        <nav class="menu-navigation" id="navigations" data-menu>
+          <ul class="site-nav list">
+            <li class="menu">
+              <a
+                href="https://yarik000315.github.io/goit-markup-hw-08/studio.html"
+                class="link"
+                >Студия</a
+              >
+            </li>
+            <li class="menu">
+              <a href="#" class="link current">Портфолио</a>
+            </li>
+            <li class="menu">
+              <a href="#" class="link">Контакты</a>
+            </li>
+          </ul>
+          <address class="auth-nav">
+            <a
+              href="mailto:info@devstudio.com"
+              aria-label="Написать письмо"
+              class="contacts"
+            >
+              <svg aria-label="Иконка письмо" class="icon-contacts">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+            <a href="tel:+380961111111" aria-label="Позвонить" class="contacts">
+              <svg aria-label="Иконка телефона" class="icon-contacts">
+                <use xlink:href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </address>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <ul class="filter list">
+          <li class="filter-item">
+            <button class="button-filter">Все</button>
+          </li>
+          <li class="filter-item">
+            <button class="button-filter">Веб-сайты</button>
+          </li>
+          <li class="filter-item">
+            <button class="button-filter">Приложения</button>
+          </li>
+          <li class="filter-item">
+            <button class="button-filter">Дизайн</button>
+          </li>
+          <li class="filter-item">
+            <button class="button-filter">Маркетинг</button>
+          </li>
+        </ul>
+      </div>
+      <section class="container product">
+        <ul class="list product-flex">
+          <li>
+            <div class="box-item">
+              <div class="box-window">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/laptop_people.jpg    1x,
+                      ./images/desktop/portfolio/laptop_people@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/laptop_people.jpg    1x,
+                      ./images/tablet/portfolio/laptop_people@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/laptop_people.jpg    1x,
+                      ./images/mobile/portfolio/laptop_people@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/laptop_people.webp    1x,
+                      ./images/desktop/portfolio/laptop_people@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/laptop_people.webp    1x,
+                      ./images/tablet/portfolio/laptop_people@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/laptop_people.webp    1x,
+                      ./images/mobile/portfolio/laptop_people@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/desktop/portfolio/laptop_people.jpg"
+                    alt="Проект2"
+                    aria-label="Картинка проекта 1"
+                    width="450"
+                  />
+                </picture>
+
+                <div class="text-window">
+                  <p class="window">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+              </div>
+              <h3 class="product-title">Технокряк</h3>
+              <p class="product-name">Веб-сайт</p>
+            </div>
+          </li>
+          <li>
+            <div class="box-item">
+              <div class="box-window">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/basketball.jpg    1x,
+                      ./images/desktop/portfolio/basketball@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/basketball.jpg    1x,
+                      ./images/tablet/portfolio/basketball@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/basketball.jpg    1x,
+                      ./images/mobile/portfolio/basketball@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/basketball.webp    1x,
+                      ./images/desktop/portfolio/basketball@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/basketball.webp    1x,
+                      ./images/tablet/portfolio/basketball@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/basketball.webp    1x,
+                      ./images/mobile/portfolio/basketball@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/desktop/portfolio/basketball.jpg"
+                    alt="Проект2"
+                    aria-label="Картинка проекта 1"
+                    width="450"
+                  />
+                </picture>
+
+                <div class="text-window">
+                  <p class="window">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Adipisci, commodi! Perspiciatis facere ab libero!
+                  </p>
+                </div>
+              </div>
+              <h3 class="product-title">Постер New Orlean vs Golden Star</h3>
+              <p class="product-name">Дизайн</p>
+            </div>
+          </li>
+          <li>
+            <div class="box-item">
+              <div class="box-window">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/fish.jpg    1x,
+                      ./images/desktop/portfolio/fish@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/fish.jpg    1x,
+                      ./images/tablet/portfolio/fish@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/fish.jpg    1x,
+                      ./images/mobile/portfolio/fish@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/fish.webp    1x,
+                      ./images/desktop/portfolio/fish@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/fish.webp    1x,
+                      ./images/tablet/portfolio/fish@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/fish.webp    1x,
+                      ./images/mobile/portfolio/fish@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/desktop/portfolio/fish.jpg"
+                    alt="Проект2"
+                    aria-label="Картинка проекта 1"
+                    width="450"
+                  />
+                </picture>
+
+                <div class="text-window">
+                  <p class="window">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Adipisci, commodi! Perspiciatis facere ab libero!
+                  </p>
+                </div>
+              </div>
+              <h3 class="product-title">Ресторан Seafood</h3>
+              <p class="product-name">Приложение</p>
+            </div>
+          </li>
+          <li>
+            <div class="box-item">
+              <div class="box-window">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/headphone.jpg    1x,
+                      ./images/desktop/portfolio/headphone@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/headphone.jpg    1x,
+                      ./images/tablet/portfolio/headphone@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/headphone.jpg    1x,
+                      ./images/mobile/portfolio/headphone@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/headphone.webp    1x,
+                      ./images/desktop/portfolio/headphone@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/headphone.webp    1x,
+                      ./images/tablet/portfolio/headphone@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/headphone.webp    1x,
+                      ./images/mobile/portfolio/headphone@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/desktop/portfolio/headphone.jpg"
+                    alt="Проект2"
+                    aria-label="Картинка проекта 1"
+                    width="450"
+                  />
+                </picture>
+
+                <div class="text-window">
+                  <p class="window">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Adipisci, commodi! Perspiciatis facere ab libero!
+                  </p>
+                </div>
+              </div>
+              <h3 class="product-title">Проект Prime</h3>
+              <p class="product-name">Маркетинг</p>
+            </div>
+          </li>
+          <li>
+            <div class="box-item">
+              <div class="box-window">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/two_box.jpg    1x,
+                      ./images/desktop/portfolio/two_box@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/two_box.jpg    1x,
+                      ./images/tablet/portfolio/two_box@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/two_box.jpg    1x,
+                      ./images/mobile/portfolio/two_box@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/two_box.webp    1x,
+                      ./images/desktop/portfolio/two_box@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/two_box.webp    1x,
+                      ./images/tablet/portfolio/two_box@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/two_box.webp    1x,
+                      ./images/mobile/portfolio/two_box@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/desktop/portfolio/two_box.jpg"
+                    alt="Проект2"
+                    aria-label="Картинка проекта 1"
+                    width="450"
+                  />
+                </picture>
+
+                <div class="text-window">
+                  <p class="window">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Adipisci, commodi! Perspiciatis facere ab libero!
+                  </p>
+                </div>
+              </div>
+              <h3 class="product-title">Проект Boxes</h3>
+              <p class="product-name">Приложение</p>
+            </div>
+          </li>
+          <li>
+            <div class="box-item">
+              <div class="box-window">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/computer.jpg    1x,
+                      ./images/desktop/portfolio/computer@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/computer.jpg    1x,
+                      ./images/tablet/portfolio/computer@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/computer.jpg    1x,
+                      ./images/mobile/portfolio/computer@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/computer.webp    1x,
+                      ./images/desktop/portfolio/computer@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/computer.webp    1x,
+                      ./images/tablet/portfolio/computer@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/computer.webp    1x,
+                      ./images/mobile/portfolio/computer@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/desktop/portfolio/computer.jpg"
+                    alt="Проект2"
+                    aria-label="Картинка проекта 1"
+                    width="450"
+                  />
+                </picture>
+
+                <div class="text-window">
+                  <p class="window">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Adipisci, commodi! Perspiciatis facere ab libero!
+                  </p>
+                </div>
+              </div>
+              <h3 class="product-title">Inspiration has no Borders</h3>
+              <p class="product-name">Веб-сайт</p>
+            </div>
+          </li>
+          <li>
+            <div class="box-item">
+              <div class="box-window">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/book.jpg    1x,
+                      ./images/desktop/portfolio/book@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/book.jpg    1x,
+                      ./images/tablet/portfolio/book@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/book.jpg    1x,
+                      ./images/mobile/portfolio/book@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/book.webp    1x,
+                      ./images/desktop/portfolio/book@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/book.webp    1x,
+                      ./images/tablet/portfolio/book@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/book.webp    1x,
+                      ./images/mobile/portfolio/book@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/desktop/portfolio/book.jpg"
+                    alt="Проект2"
+                    aria-label="Картинка проекта 1"
+                    width="450"
+                  />
+                </picture>
+
+                <div class="text-window">
+                  <p class="window">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Adipisci, commodi! Perspiciatis facere ab libero!
+                  </p>
+                </div>
+              </div>
+              <h3 class="product-title">Издание Limited Edition</h3>
+              <p class="product-name">Дизайн</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="box-item">
+              <div class="box-window">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/sticker.jpg    1x,
+                      ./images/desktop/portfolio/sticker@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/sticker.jpg    1x,
+                      ./images/tablet/portfolio/sticker@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/sticker.jpg    1x,
+                      ./images/mobile/portfolio/sticker@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/sticker.webp    1x,
+                      ./images/desktop/portfolio/sticker@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/sticker.webp    1x,
+                      ./images/tablet/portfolio/sticker@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/sticker.webp    1x,
+                      ./images/mobile/portfolio/sticker@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/desktop/portfolio/sticker.jpg"
+                    alt="Проект2"
+                    aria-label="Картинка проекта 1"
+                    width="450"
+                  />
+                </picture>
+
+                <div class="text-window">
+                  <p class="window">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Adipisci, commodi! Perspiciatis facere ab libero!
+                  </p>
+                </div>
+              </div>
+              <h3 class="product-title">Проект LAB</h3>
+              <p class="product-name">Маркетинг</p>
+            </div>
+          </li>
+          <li>
+            <div class="box-item margin-last-item">
+              <div class="box-window">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/laptop_hand.jpg    1x,
+                      ./images/desktop/portfolio/laptop_hand@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/laptop_hand.jpg    1x,
+                      ./images/tablet/portfolio/laptop_hand@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/laptop_hand.jpg    1x,
+                      ./images/mobile/portfolio/laptop_hand@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio/laptop_hand.webp    1x,
+                      ./images/desktop/portfolio/laptop_hand@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio/laptop_hand.webp    1x,
+                      ./images/tablet/portfolio/laptop_hand@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio/laptop_hand.webp    1x,
+                      ./images/mobile/portfolio/laptop_hand@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/desktop/portfolio/laptop_hand.jpg"
+                    alt="Проект2"
+                    aria-label="Картинка проекта 1"
+                    width="450"
+                  />
+                </picture>
+
+                <div class="text-window">
+                  <p class="window">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Adipisci, commodi! Perspiciatis facere ab libero!
+                  </p>
+                </div>
+              </div>
+              <h3 class="product-title">Growing Business</h3>
+              <p class="product-name">Приложение</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+   <div class="foot">
+      <footer class="container footer">
+        <div class="footer-box">
+          <section class="">
+            <a href="#" class="logo-footer-part list"
+              ><span class="logo-first-part">Web</span>Studio</a
+            >
+            <address>
+              <ul class="list footer-list">
+                <li class="footer-contacts">
+                  <a href="#">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="footer-contacts">
+                  <a href="mailto:info@devstudio.com"> info@devstudio.com </a>
+                </li>
+                <li class="footer-contacts">
+                  <a href="tel:+380961111111">+38 096 111 11 11 </a>
+                </li>
+              </ul>
+            </address>
+          </section>
+          <section class="content-box">
+            <p class="join">присоединяйтесь</p>
+            <ul class="footer-icons-list list">
+              <li class="footer-icons-items">
+                <a href="#" class="footer-icons-link">
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-icons-items">
+                <a href="#" class="footer-icons-link">
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-icons-items">
+                <a href="#" class="footer-icons-link">
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-icons-items">
+                <a href="#" class="footer-icons-link">
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="mailing">
+            <p class="subscription">Подпишитесь на рассылку</p>
+            <div class="input-but">
+              <input
+                class="input-footer"
+                type="text"
+                name="user_email"
+                placeholder="E-mail"
+              />
+              <button class="button foot-but">Подписаться</button>
+            </div>
+          </section>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

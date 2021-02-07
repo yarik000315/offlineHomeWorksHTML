@@ -1,0 +1,56 @@
+.page-header {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.page-header-box {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.menu-item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 52px;
+  }
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.menu-link {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  @include animation(color);
+
+  &:hover,
+  &:focus {
+    color: $logo-first-color;
+  }
+}
+
+.list-nav .current {
+  color: $logo-first-color;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  display: block;
+  margin-top: 27px;
+  height: 4px;
+  width: 100%;
+  background-color: $logo-first-color;
+  border-radius: 10px 10px;
+}

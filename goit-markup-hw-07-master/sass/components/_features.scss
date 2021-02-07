@@ -1,0 +1,57 @@
+.features {
+  &-title {
+    color: $title-text-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  &-text {
+    color: $main-text-color;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+  }
+
+  &-list {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      height: 120px;
+      background-color: $team-color;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.technology {
+  margin-bottom: 0;
+}
+
+.icon {
+  &-antenna::before {
+    background-image: url(../images/antenna_1.svg);
+  }
+
+  &-clock::before {
+    background-image: url(../images/clock_1.svg);
+  }
+
+  &-diagram::before {
+    background-image: url(../images/diagram_1.svg);
+  }
+
+  &-astronaut::before {
+    background-image: url(../images/astronaut_1.svg);
+  }
+}

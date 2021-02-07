@@ -1,0 +1,12 @@
+.logo {
+  &-first-part {
+    @extend %logo-part;
+    color: $logo-first-color;
+  }
+
+  &-second-part {
+    @extend %logo-part;
+    color: $logo-second-color;
+    margin-right: 85px;
+  }
+}
